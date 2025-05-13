@@ -14,6 +14,11 @@ app.get("/Home" , (req,res) => {
     res.send("The home Path is coneected")
 });
 
+app.get("/About" , (req,res) => {
+    res.send("The About Path is coneected")
+});
+
+
 //coutom response send 
 app.get("/", (req,res) => {
     res.send(" The file Path Does not exists")

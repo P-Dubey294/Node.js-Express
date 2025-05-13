@@ -16,8 +16,9 @@ app.use((req,res) => {
         college : "GH raisoni college of engeenering and management",
         city : "Nagpure",
         contactNo : 9529754950,
-        Branch : "MAC" 
+        Branch : "MAC"
     });  // sending response in object formate.
 
     res.send("<h1>Prathamkumar Dubey<h1>") // sending response in HTML tag.
 });
+
