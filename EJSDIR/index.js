@@ -15,6 +15,11 @@ app.get("/rolldice", (req,res) => {
     res.render("rolldice.ejs" , { diceVal });
 })
 
+app.get("/ig/:username", (req,res) => {
+    let { username } = req.params; 
+    res.render("instagram.ejs" , { username });
+})
+
 
 app.listen(port , () => {
     console.log(`App Listem on Port.${port}`);
