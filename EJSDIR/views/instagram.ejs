@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embededd Javascript Templates</title>
-</head>
+<%- include ("include /head.ejs") %>
 <body>
     <h2> This Page is Belons To @<%= username %></h2>
     <div>
         <button>Follow</button>
         <button>Measseges</button>
     </div>
+    <h3> Account That Follow You :</h3>
+    <ul>
+        <% for(let name of follower) { %>
+            <li> <%= name %></li>
+            <% } %>
+    </ul>
+
     
 </body>
 </html>
