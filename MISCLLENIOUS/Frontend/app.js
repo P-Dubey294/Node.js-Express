@@ -24,13 +24,29 @@
 // Constructor function or New Operators 
 // constructor--> dosent return anyting & Start with Capital Letters.
 
-function Person(name  , age) {
-    this.name = name,
-    this.age = age
-}
+// function Person(name  , age) {
+//     this.name = name,
+//     this.age = age
+// }
 
-Person.prototype.talk = function() {
-    console.log(`Hi,my name is ${this.name}`);
-}
-let p1 = new Person("Pratham", 23);
-let p2 = new Person("Shruti", 22);
+// Person.prototype.talk = function() {
+//     console.log(`Hi,my name is ${this.name}`);
+// }
+// let p1 = new Person("Pratham", 23);
+// let p2 = new Person("Shruti", 22);
+
+
+// Classes 
+// Classes is a template for creatinh a object 
+
+// class Person {
+//     constructor (name,age) {
+//      this.name = name;
+//      this.age = age;
+//     }
+//     talk () {
+//         console.log(`Hi , My Name is ${this.name}`);
+//     }
+// }
+// let p1 = new Person ("Pratham",  23);
+// let p2 = new Person ("Shruti",   22);
