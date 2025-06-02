@@ -50,3 +50,37 @@
 // }
 // let p1 = new Person ("Pratham",  23);
 // let p2 = new Person ("Shruti",   22);
+
+// Inheritance --> Its a Machanishms for creating a  new Instances of 
+// of a class baseed on existing class . 
+
+// Parents --> (base class) 
+// Child class 
+
+// There are two keyword which we have used 
+// a> extends --> used to inhertis the properties 
+// b> super ---> is  a keyword  which is a Parets class kekywords.
+class Person {
+    constructor (name,age){
+         console.log("Person class constructor");
+         this.name = name;
+         this.age = age;
+    }
+    talk () {
+        console.log(`HI , I am ${this.name}`);
+    }
+}
+
+class Student extends Person {
+    constructor (name , age , marks) {
+         console.log("Student class constructor");
+         super (name,age) // Parets class constructor being called.
+         this.marks = marks;
+    }
+}
+class Teacher extends Person {
+    constructor (name , age , subjects) {
+         super (name,age) // Parets class constructor being called.
+         this.subjects = subjects;
+    }
+}
